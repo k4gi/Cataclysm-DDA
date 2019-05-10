@@ -1,0 +1,61 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "tall_grass_patch",
+    "copy-from": "generic_open_land",
+    "name": "field",
+    "sym": ".",
+    "color": "brown",
+    "see_cost": 2,
+    "extras": "field",
+    "spawns": { "group": "GROUP_FOREST", "population": [ 0, 1 ], "chance": 13 }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "tall_grass_patch" ],
+    "object": {
+      "fill_ter": [ "t_dirt", "t_grass", "t_grass" ],
+      "rows": [
+        "    .....               ",
+        "   ...,...              ",
+        "   ..,,,,....           ",
+        "  ..,,,;;;,,...         ",
+        "  ..,,;;||||;;,....     ",
+        " ..,,,,;||;;||;;,,,,    ",
+        "  ...,,;;|||;;;,,,..    ",
+        "   ....,,,;;;;,,..      ",
+        "     ...,,,;;,,...      ",
+        "      ....,,,,..        ",
+        "        ..,,..          ",
+        "         ...            ",
+        "         ....           ",
+        "        ..,,,..         ",
+        "        ..,;,,..        ",
+        "       ..,,;;,,..       ",
+        "       ..,,;;;;,,..     ",
+        "      ...,;;||;,,..     ",
+        "     ..,,,;;|||;,...    ",
+        "      ..,,;|;|;|;,,..   ",
+        "       ..,,;;||;,,.     ",
+        "         ..,,;,,..      ",
+        "          ...,,..       ",
+        "            ...         "
+      ],
+      "terrain": {
+	" ": [ "t_dirt", "t_grass", "t_grass_dead" ],
+	".": [ "t_grass", "t_grass", "t_grass_dead" ],
+	",": [ "t_grass", "t_grass_long" ],
+	";": [ "t_grass_long", "t_grass_tall" ],
+	"|": "t_grass_tall"
+      },
+      "furniture": {
+	" ": [ "f_boulder_small", "f_boulder_medium", "f_boulder_large", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null" ],
+	".": [ "f_boulder_small", "f_boulder_medium", "f_boulder_large", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null" ],
+	",": [ "f_boulder_small", "f_boulder_medium", "f_boulder_large", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null" ],
+	";": [ "f_boulder_small", "f_boulder_medium", "f_boulder_large", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null" ],
+	"|": [ "f_boulder_small", "f_boulder_medium", "f_boulder_large", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null", "f_null" ]
+      }
+    }
+  }
+]
